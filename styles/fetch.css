@@ -1,0 +1,131 @@
+@media only screen and (min-width: 950px) {
+    .email-form-lockup {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+
+  #container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+    padding: 20px;
+    background: black;
+    justify-content: center;
+  }
+  @media only screen and (max-width: 1100px) {
+    #container {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+  @media only screen and (max-width: 950px) {
+    #container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  @media only screen and (max-width: 750px) {
+    #container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media only screen and (max-width: 550px) {
+    #container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    #container {
+      grid-template-columns: 200px;
+    }
+  }
+  .recmnd {
+    background: olivedrab;
+    color: white;
+    text-align: center;
+    display: none;
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
+  .poster {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 270px;
+    background-size: 100% 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+      rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  }
+  .poster:hover {
+    transform: scale(1.15, 1.15);
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.8);
+  }
+  .detailDiv {
+    display: none;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  .detailDiv p {
+    margin: 2px;
+  }
+  #noResult {
+    text-align: center;
+    background-color: black;
+    padding: 70px 0;
+    display: none;
+  }
+  #noResult p {
+    color: white;
+    font-weight: bold;
+  }
+  #noResult img {
+    width: 400px;
+    display: block;
+    margin: auto;
+  }
+
+  #searchDropdown {
+    display: block;
+    overflow-y: auto;
+    z-index: 1;
+    max-height: 300px;
+  }
+  #searchList > div {
+    cursor: pointer;
+    height: 100px;
+    display: flex;
+    margin: 10px 0;
+    background-color: #192133;
+  }
+  .searchImg {
+    width: 28%;
+  }
+  .searchImg img {
+    height: 100%;
+    width: 100%;
+  }
+  .searchDetails {
+    width: 43%;
+    text-align: left;
+    color: white;
+    padding: 0 10px 10px;
+    overflow: hidden;
+    font-size: 13px;
+  }
+  .searchBb p {
+    margin: 0;
+  }
+  .searchBb {
+    width: 28%;
+    display: none;
+    justify-content: center;
+    background: olive;
+    padding: 17px 0;
+  }
+  .noSearch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
