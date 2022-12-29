@@ -53,7 +53,8 @@ function seearch(t) {
 async function searchBar() {
   try {
     search = document.querySelector(".nfTextField").value;
-    x = await fetch("http://www.omdbapi.com/?apikey=bd77af0d&s=" + search);
+    console.log(search);
+    x = await fetch("https://www.omdbapi.com/?apikey=bd77af0d&s=" + search);
     moviesList = await x.json();
     document.getElementById("searchList").innerHTML = "";
     error = false;
@@ -109,7 +110,7 @@ function display(index) {
 }
 function hide(index) {
   console.log(index);
-  
+
   let b = document.querySelectorAll(".detailDiv");
   b[index].style.display = "none";
 }
